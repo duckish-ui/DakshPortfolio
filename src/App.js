@@ -22,6 +22,14 @@ function App() {
           </>
         } />
         <Route path="/project/:id" element={<ProjectDetail />} />
+        <Route path="*" element={
+          <>
+            <Banner />
+            <About />
+            <Skills />
+            <Projects />
+          </>
+        } />
       </Routes>
     </div>
   );
