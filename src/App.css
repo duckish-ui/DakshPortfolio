@@ -234,7 +234,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: url('./assets/img/banner.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -243,12 +243,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(113, 255, 160, 0.5) -5.91%, rgba(21, 253, 98, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
 }
+
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
@@ -304,10 +305,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  
 }
 .skill-bx {
   background: #151515;
   border-radius: 64px;
+  border: 2px solid #2ecc71;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
@@ -389,7 +392,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(90.21deg, #76b813 -5.91%, #4a7d57 111.58%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -397,6 +400,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .project .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
+}
+
+/* Logo sizing */
+.site-logo {
+  width: 95px;
+  height: auto;
+  display: block;
 }
 .project .nav.nav-pills .nav-link.active {
     border: 1px solid rgba(255, 255, 255, 1);
@@ -421,7 +431,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #76b813 -5.91%, #4a7d57 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -468,7 +478,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #76b813 -5.91%, #4a7d57 111.58%);
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -564,7 +574,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .new-email-bx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #76b813 -5.91%, #4a7d57 111.58%);
   border-radius: 20px;
   position: absolute;
   z-index: -1;
@@ -609,4 +619,217 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+.header-img {
+width: 85%;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: -10%;
+margin-bottom: 10%;
+}
+
+/************ Project Detail Page Css ************/
+/* Project Detail Page Styles with new color scheme */
+.project-detail {
+  padding: 100px 0 80px 0;
+  min-height: 100vh;
+  background: linear-gradient(90.21deg, #1c1c1b -5.91%, #4a7d57 111.58%);
+}
+
+.project-detail h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.project-detail h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.project-detail p {
+  color: #B8B8B8;
+}
+
+.project-detail strong {
+  color: #fff;
+}
+
+.project-detail img {
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-detail ul {
+  padding-left: 20px;
+}
+
+.project-detail ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #B8B8B8;
+}
+
+/* Projects Section Styles */
+.project {
+  padding: 80px 0;
+  position: relative;
+  background: #121212;
+  border-top: 1px solid rgba(74, 125, 87, 0.2);
+}
+
+.project h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.project p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 70%;
+}
+
+/* Research Section - slight variation */
+.research-section {
+  background: #1a1a1a;
+  border-top: 1px solid rgba(74, 125, 87, 0.2);
+}
+
+/* Extracurriculars Section - slight variation */
+.extracurriculars-section {
+  background: #0a0a0a;
+  border-top: 1px solid rgba(74, 125, 87, 0.2);
+}
+
+/* Make project cards clickable with hover effect */
+.proj-imgbx {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.proj-imgbx:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(74, 125, 87, 0.5);
+}
+
+.background-image-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -4;
+  opacity: 0.5;
+}
+
+/* About Section Styles */
+.about {
+  padding: 80px 0;
+  background: #121212;
+}
+
+.about h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.about h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.about h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.about-content {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+}
+
+.about-content p {
+  color: #B8B8B8;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-highlights {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.highlight-item {
+  background: rgba(74, 125, 87, 0.2);
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border: 1px solid rgba(74, 125, 87, 0.3);
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(74, 125, 87, 0.4);
+}
+
+.highlight-item h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.highlight-item p {
+  color: #B8B8B8;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Update navbar for better appearance with more links */
+.navbar .navbar-nav .nav-link.navbar-link {
+  font-size: 16px;
+  padding: 0 15px;
+}
+
+@media (max-width: 991px) {
+  .navbar .navbar-nav .nav-link.navbar-link {
+    padding: 10px 20px;
+  }
+}
+
+.project-images img {
+  margin-bottom: 20px;
+  max-width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-images img:last-child {
+  margin-bottom: 0;
 }
