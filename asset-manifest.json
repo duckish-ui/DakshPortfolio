@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/DakshPortfolio/static/css/main.81f25106.css",
+    "main.js": "/DakshPortfolio/static/js/main.8994d123.js",
+    "static/js/453.676b9ed8.chunk.js": "/DakshPortfolio/static/js/453.676b9ed8.chunk.js",
+    "static/media/pillimg2.jpg": "/DakshPortfolio/static/media/pillimg2.26c474945883fdc26e8a.jpg",
+    "static/media/car1.jpg": "/DakshPortfolio/static/media/car1.aa99888275ddbbc4c964.jpg",
+    "static/media/car2.jpg": "/DakshPortfolio/static/media/car2.8140dc6b669317b4b2ab.jpg",
+    "static/media/pillimg.png": "/DakshPortfolio/static/media/pillimg.b6128b86e17af9c6ccd1.png",
+    "static/media/color-sharp2.png": "/DakshPortfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/quit1.png": "/DakshPortfolio/static/media/quit1.c92c164ffaf3bae6a251.png",
+    "static/media/CentraNo2-Bold.ttf": "/DakshPortfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/DakshPortfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/DakshPortfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/banner.jpg": "/DakshPortfolio/static/media/banner.337fe15cce30bb2ed10b.jpg",
+    "static/media/noteagent1.png": "/DakshPortfolio/static/media/noteagent1.f9d1a879494790424e4d.png",
+    "static/media/noteagent2.png": "/DakshPortfolio/static/media/noteagent2.4ca34e48f1155a13b453.png",
+    "static/media/logo1.png": "/DakshPortfolio/static/media/logo1.81f9a030634793f1b4d3.png",
+    "static/media/project-img2.png": "/DakshPortfolio/static/media/project-img2.2e52097c417f9f1134b0.png",
+    "static/media/chess.png": "/DakshPortfolio/static/media/chess.03ec279bf0e48ffa0a6e.png",
+    "static/media/revicons.eot": "/DakshPortfolio/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/DakshPortfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/DakshPortfolio/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/nav-icon3.svg": "/DakshPortfolio/static/media/nav-icon3.08b285abb8e118b52637efa5d65c5367.svg",
+    "index.html": "/DakshPortfolio/index.html",
+    "static/media/nav-icon1.svg": "/DakshPortfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
+    "main.81f25106.css.map": "/DakshPortfolio/static/css/main.81f25106.css.map",
+    "main.8994d123.js.map": "/DakshPortfolio/static/js/main.8994d123.js.map",
+    "453.676b9ed8.chunk.js.map": "/DakshPortfolio/static/js/453.676b9ed8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81f25106.css",
+    "static/js/main.8994d123.js"
+  ]
+}
