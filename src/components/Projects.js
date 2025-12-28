@@ -7,6 +7,12 @@ import projImg4 from "../assets/img/car1.jpg";
 import projImg5 from "../assets/img/car2.jpg";
 import projImg6 from "../assets/img/noteagent1.png";
 import projImg7 from "../assets/img/noteagent2.png";
+import projImg8 from "../assets/img/sees1.png";
+import projImg9 from "../assets/img/sees2.png";
+import projImg10 from "../assets/img/assip2.png";
+import projImg11 from "../assets/img/assip1.png";
+import projImg12 from "../assets/img/Polyphy1.png";
+import projImg13 from "../assets/img/Polyphy2.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -46,19 +52,19 @@ export const Projects = () => {
       id: "nasa-sees",
       title: "NASA SEES",
       description: "ML & Climate Data Analysis",
-      imgUrl: projImg2,
+      imgUrl: projImg8,
     },
     {
       id: "assip-ml",
       title: "ASSIP (GMU)",
       description: "Time-Series ML Research",
-      imgUrl: projImg3,
+      imgUrl: projImg10,
     },
     {
       id: "ucsc-cosmic-web",
       title: "UC Santa Cruz Research",
       description: "Cosmic Web Visualization",
-      imgUrl: projImg1,
+      imgUrl: projImg12,
     },
   ];
 

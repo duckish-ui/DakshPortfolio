@@ -833,3 +833,42 @@ margin-bottom: 10%;
 .project-images img:last-child {
   margin-bottom: 0;
 }
+
+.proj-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  height: 300px; /* Fixed height */
+}
+
+.proj-imgbx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This crops the image to fill the container */
+  object-position: center; /* Centers the image */
+}
+
+/* Carousel Arrow Positioning */
+.skill-slider .react-multiple-carousel__arrow {
+  z-index: 10;
+}
+
+.skill-slider .react-multiple-carousel__arrow--left {
+  left: -5px; /* Move left arrow further left */
+}
+
+.skill-slider .react-multiple-carousel__arrow--right {
+  right: -5px; /* Move right arrow further right */
+}
+
+/* For smaller screens, adjust arrow position */
+@media (max-width: 768px) {
+  .skill-slider .react-multiple-carousel__arrow--left {
+    left: 0;
+  }
+  
+  .skill-slider .react-multiple-carousel__arrow--right {
+    right: 0;
+  }
+}

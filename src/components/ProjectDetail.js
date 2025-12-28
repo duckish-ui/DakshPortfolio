@@ -7,7 +7,12 @@ import projImg4 from "../assets/img/car1.jpg";
 import projImg5 from "../assets/img/car2.jpg";
 import projImg6 from "../assets/img/noteagent1.png";
 import projImg7 from "../assets/img/noteagent2.png";
-
+import projImg8 from "../assets/img/sees1.png";
+import projImg9 from "../assets/img/sees2.png";
+import projImg10 from "../assets/img/assip2.png";
+import projImg11 from "../assets/img/assip1.png";
+import projImg12 from "../assets/img/Polyphy1.png";
+import projImg13 from "../assets/img/Polyphy2.png";
 export const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -103,12 +108,12 @@ export const ProjectDetail = () => {
   ======================= */
 
   "nasa-sees": {
-    title: "NASA SEES – Hack the GLOBE",
+    title: "NASA SEES - Hack the GLOBE",
     description: "Machine Learning & Climate Analysis",
-    imgUrl: projImg2,
+    imgUrl: projImg9,
     detailedDescription:
-      "Selected for NASA’s SEES program to analyze global climate datasets using dimensionality reduction and unsupervised learning. Applied PCA and clustering methods to identify anomalies and long-term trends, presenting results to NASA engineers and submitting findings to AGU.",
-    technologies: ["Python", "PCA", "Unsupervised Learning", "Climate Data"],
+      "Selected for NASA’s SEES program to analyze global climate datasets using dimensionality reduction and unsupervised learning. Applied PCA and clustering methods to identify anomalies and long-term trends. We wanted to see which dimensionality reduction technique best revealed the underlying structure of surface temperature data. Then we used this to identify outliers and inform flag generation in environmental datasets. Presented results to NASA engineers and presented findings at the 2025 American Geophysical Union.",
+    technologies: ["Python", "PCA", "KMeans", "Unsupervised Learning (DBSCAN + GMM + Isolation Forest)", "Climate Data"],
     features: [
       "Large-scale environmental data analysis",
       "Dimensionality reduction using PCA",
@@ -116,15 +121,16 @@ export const ProjectDetail = () => {
       "Technical presentation to NASA researchers"
     ],
     duration: "Summer 2025",
-    role: "Student Research Intern"
+    role: "Student Research Intern",
+    githubLink: "https://github.com/duckish-ui/SEES-Dimensionality-Reduction-for-GLOBE-Dataset",
   },
 
   "assip-ml": {
     title: "ASSIP – Flood & Rainfall Prediction",
     description: "Time-Series Machine Learning Research",
-    imgUrl: projImg3,
+    imgUrl: projImg11,
     detailedDescription:
-      "Conducted machine learning research under Dr. Boicu at George Mason University, developing LSTM, XGBoost, and ensemble models for short-term rainfall and flood prediction. First author on a paper accepted to IEEE MIT URTC.",
+      "Conducted machine learning research under Dr. Boicu at George Mason University through Aspiring Scientists Summer Internship Program (ASSIP), developing LSTM, XGBoost, and ensemble models for short-term rainfall and flood prediction. First author on a paper accepted to IEEE MIT URTC. Flooding is one of the most damaging weather-related hazards, and improving short-term rainfall forecasts is critical for effective risk management. In this project, I investigated whether machine learning models could provide faster and more accurate hourly rainfall predictions than traditional physics-based approaches. Using over a decade of hourly rainfall data (2012–2024) from the Iowa Environmental Mesonet, I compared a Long Short-Term Memory (LSTM) neural network with an XGBoost regression model, each representing a distinct approach to time-series forecasting. To leverage their complementary strengths, I developed a stacked ensemble that combined predictions from both models. While LSTM captured temporal patterns directly from sequential data and XGBoost excelled at modeling nonlinear feature interactions, the ensemble consistently outperformed both. Over 96% of its predictions fell within ±1 mm of observed rainfall, highlighting the potential of hybrid machine learning systems for reliable, real-time rainfall forecasting and flood preparedness. ",
     technologies: ["Python", "LSTM", "XGBoost", "Time-Series Modeling"],
     features: [
       "Feature engineering for temporal data",
@@ -134,26 +140,30 @@ export const ProjectDetail = () => {
     ],
     duration: "Summer 2025",
     role: "Research Intern",
-    paperLink: "https://example.com"
+    paperLink: "https://drive.google.com/file/d/1ldQ0HSRQRjrwvN57L9tQwBeBK55aPOCh/view?usp=sharing",
+    githubLink: "https://github.com/duckish-ui/Machine-Learning-ASSIP",
   },
 
-  "ucsc-cosmic-web": {
-    title: "Cosmic Web Visualization",
-    description: "Computational Astrophysics Research",
-    imgUrl: projImg1,
-    detailedDescription:
-      "Assisted in analyzing and visualizing large-scale cosmic web structures using the Monte Carlo Physarum Machine algorithm. Worked on refining Taichi-based visualization tools to support scientific interpretation under Dr. Elek.",
-    technologies: ["Python", "Taichi", "Scientific Visualization"],
-    features: [
-      "Graph-based structure reconstruction",
-      "Visualization of 2D and 3D datasets",
-      "Research workflow exposure",
-      "Collaboration with academic researchers"
-    ],
-    duration: "2024",
-    role: "Student Research Intern"
-  },
+"ucsc-cosmic-web": {
+  title: "Cosmic Web Visualization",
+  description: "Computational Astrophysics & Scientific Visualization",
+  imgUrl: projImg13,
+  detailedDescription:
+    "Contributed to the Rhizome Cosmology project by analyzing and visualizing large-scale cosmic web structures reconstructed using the Monte Carlo Physarum Machine (MCPM), an agent-based probabilistic model inspired by Physarum polycephalum. Worked with PolyPhy, an open-source GPU-accelerated framework, to generate high-resolution 3D scalar density fields from sparse galaxy and dark matter halo catalogs. Focused on refining Taichi-based visualization pipelines to improve volumetric rendering, filament contrast, and parameter sensitivity analysis, enabling clearer scientific interpretation of multi-scale filamentary networks. This work supported ongoing research linking cosmic web filaments to the intergalactic medium and anomalous dispersion measures in fast radio burst observations, under the mentorship of Dr. Elek.",
+  technologies: ["Python", "Taichi", "PolyPhy", "GPU Computing", "Agent-Based Modeling", "Data Visualization"],
+  features: [
+    "Physarum-inspired agent-based reconstruction of 3D cosmic web density fields",
+    "Volumetric rendering and interactive exploration of probabilistic filament networks",
+    "GPU-accelerated simulation of millions of stochastic agents",
+    "Parameter tuning and sensitivity analysis for multi-scale structure recovery",
+    "Collaboration with academic researchers in computational cosmology"
+  ],
+  duration: "2024",
+  role: "Student Research Intern",
+  githubLink: "https://github.com/PolyPhyHub",
+}
 
+,
   /* =======================
      EXTRACURRICULARS & LEADERSHIP
   ======================= */
@@ -351,7 +361,7 @@ export const ProjectDetail = () => {
         rel="noopener noreferrer"
         className="mb-3"
       >
-        Read Paper
+        Read More
       </Button>
     )}
   </Col>
