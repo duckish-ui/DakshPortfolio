@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/DakshPortfolio/static/css/main.2dfc4292.css",
-    "main.js": "/DakshPortfolio/static/js/main.e169b125.js",
+    "main.css": "/DakshPortfolio/static/css/main.a114e6a1.css",
+    "main.js": "/DakshPortfolio/static/js/main.1b05f7c4.js",
     "static/js/453.71adf86d.chunk.js": "/DakshPortfolio/static/js/453.71adf86d.chunk.js",
     "static/media/pillimg2.jpg": "/DakshPortfolio/static/media/pillimg2.26c474945883fdc26e8a.jpg",
     "static/media/car1.jpg": "/DakshPortfolio/static/media/car1.aa99888275ddbbc4c964.jpg",
+    "static/media/fbla2.png": "/DakshPortfolio/static/media/fbla2.7e64b77ae41c86790255.png",
+    "static/media/ta1.png": "/DakshPortfolio/static/media/ta1.76fec6f3dc35a6deb9bd.png",
+    "static/media/tesla.png": "/DakshPortfolio/static/media/tesla.52c7e2d6f43a39b9f732.png",
     "static/media/Polyphy1.png": "/DakshPortfolio/static/media/Polyphy1.af154084303de5e3084f.png",
     "static/media/car2.jpg": "/DakshPortfolio/static/media/car2.8140dc6b669317b4b2ab.jpg",
     "static/media/pillimg.png": "/DakshPortfolio/static/media/pillimg.b6128b86e17af9c6ccd1.png",
     "static/media/color-sharp2.png": "/DakshPortfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/quit1.png": "/DakshPortfolio/static/media/quit1.c92c164ffaf3bae6a251.png",
     "static/media/assip1.png": "/DakshPortfolio/static/media/assip1.08ff469b9e530b3cb757.png",
+    "static/media/chess1.png": "/DakshPortfolio/static/media/chess1.c95a6823b81a892a9497.png",
     "static/media/Polyphy2.png": "/DakshPortfolio/static/media/Polyphy2.9340b8381b5517233149.png",
+    "static/media/fbla1.png": "/DakshPortfolio/static/media/fbla1.b20626df23d86dca7ca6.png",
     "static/media/sees2.png": "/DakshPortfolio/static/media/sees2.59498f8b4146eb361ec0.png",
     "static/media/CentraNo2-Bold.ttf": "/DakshPortfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/DakshPortfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
@@ -23,19 +28,18 @@
     "static/media/sees1.png": "/DakshPortfolio/static/media/sees1.47d3ee9fc2cbe75d3705.png",
     "static/media/logo1.png": "/DakshPortfolio/static/media/logo1.81f9a030634793f1b4d3.png",
     "static/media/project-img2.png": "/DakshPortfolio/static/media/project-img2.2e52097c417f9f1134b0.png",
-    "static/media/chess.png": "/DakshPortfolio/static/media/chess.03ec279bf0e48ffa0a6e.png",
     "static/media/revicons.eot": "/DakshPortfolio/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/DakshPortfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/DakshPortfolio/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/nav-icon3.svg": "/DakshPortfolio/static/media/nav-icon3.08b285abb8e118b52637efa5d65c5367.svg",
     "index.html": "/DakshPortfolio/index.html",
     "static/media/nav-icon1.svg": "/DakshPortfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
-    "main.2dfc4292.css.map": "/DakshPortfolio/static/css/main.2dfc4292.css.map",
-    "main.e169b125.js.map": "/DakshPortfolio/static/js/main.e169b125.js.map",
+    "main.a114e6a1.css.map": "/DakshPortfolio/static/css/main.a114e6a1.css.map",
+    "main.1b05f7c4.js.map": "/DakshPortfolio/static/js/main.1b05f7c4.js.map",
     "453.71adf86d.chunk.js.map": "/DakshPortfolio/static/js/453.71adf86d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2dfc4292.css",
-    "static/js/main.e169b125.js"
+    "static/css/main.a114e6a1.css",
+    "static/js/main.1b05f7c4.js"
   ]
 }
