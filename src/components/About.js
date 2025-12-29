@@ -17,30 +17,30 @@ export const About = () => {
                       <div className="about-content">
                         <h3>Who I Am</h3>
                         <p>
-                          Hi! I'm Daksh Mamnani, a passionate developer and researcher with a strong 
-                          interest in creating innovative solutions through technology. I specialize 
-                          in full-stack development, machine learning, and data analysis.
-                        </p>
-                        <p>
-                          My journey in tech started with a curiosity about how things work, which 
-                          evolved into a deep passion for building applications that make a difference. 
-                          I'm constantly learning and exploring new technologies to expand my skill set.
-                        </p>
+  Hi, I’m Daksh. I’m part of a family of five. My dad, my mom, my sister, our German
+  Shepherd Skye, and me. Skye runs the house and definitely knows it. We live in
+  Folsom, California, but I grew up in Rancho before we moved here.
+</p>
+<p>
+  I go to Mira Loma High School, where I spend most of my time juggling school,
+  projects, and whatever new thing I’m curious about that week. I like staying
+  busy and learning by actually doing things instead of just reading about them. I also love going to the gym, playing chess, and hanging out with friends.
+</p>
                       </div>
                     </Col>
                     <Col md={6} className="mb-4">
                       <div className="about-content">
                         <h3>What I Do</h3>
-                        <p>
-                          I work on a variety of projects ranging from web applications to machine 
-                          learning models. My experience spans across different technologies including 
-                          React, Node.js, Python, and various database systems.
-                        </p>
-                        <p>
-                          Beyond coding, I'm actively involved in research, exploring cutting-edge 
-                          topics in AI and data science. I also dedicate time to leadership roles 
-                          and community service, believing that technology should be accessible to everyone.
-                        </p>
+                       <p>
+  Most of my work lives at the intersection of web development and problem-solving.
+  I’ve built full-stack projects, worked with machine learning concepts, and played
+  around with data to understand patterns and make better decisions.
+</p>
+<p>
+  I’m comfortable working with tools like React, JavaScript, Python, and databases,
+  but I care more about understanding <b>why</b> something works than just using a
+  framework because it’s popular.
+</p>
                       </div>
                     </Col>
                   </Row>
@@ -49,18 +49,15 @@ export const About = () => {
                     <Col xs={12}>
                       <div className="about-content">
                         <h3>My Background</h3>
-                        <p>
-                          I'm currently pursuing my education with a focus on Computer Science and 
-                          related fields. Throughout my academic journey, I've maintained a strong 
-                          GPA while actively participating in various extracurricular activities, 
-                          including tech clubs, sports, and volunteer work.
-                        </p>
-                        <p>
-                          My goal is to leverage technology to solve real-world problems and create 
-                          meaningful impact. Whether it's through innovative software solutions, 
-                          research contributions, or mentoring others, I'm committed to making a 
-                          positive difference in the tech community.
-                        </p>
+                       <p>
+  I’m currently a student focused on computer science related fields, balancing
+  school with personal projects, research, and extracurriculars. I try to stay
+  involved wherever I can, whether that’s through leadership, collaboration, or
+  helping others learn.
+</p>
+<p>
+  Long term, I want to build technology that actually matters, things that solve
+  real problems and feel thoughtful, not just flashy. I’m always trying to learn while being on the <b>edge</b>. The world moves fast, so I try my best to keep up. </p>
                       </div>
                     </Col>
                   </Row>

@@ -13,6 +13,10 @@ import projImg10 from "../assets/img/assip2.png";
 import projImg11 from "../assets/img/assip1.png";
 import projImg12 from "../assets/img/Polyphy1.png";
 import projImg13 from "../assets/img/Polyphy2.png";
+import projImg14 from "../assets/img/ta1.png";
+import projImg15 from "../assets/img/fbla1.png";
+import projImg16 from "../assets/img/fbla2.png";
+import projImg17 from "../assets/img/chess1.png";
 export const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -169,14 +173,14 @@ export const ProjectDetail = () => {
   ======================= */
 
   "ta-crc": {
-    title: "Teaching Assistant – Cosumnes River College",
+    title: "Teaching Assistant @ Cosumnes River College",
     description: "Computer Science Instruction",
-    imgUrl: projImg2,
+    imgUrl: projImg14,
     detailedDescription:
-      "First high school student hired as a TA for CISW 300 and CISW 400. Assisted with lectures, created instructional materials, supported course planning, and helped develop a new course on Python for cybersecurity.",
-    technologies: ["Python", "Web Scripting", "Teaching", "Curriculum Design"],
+      "First high school student hired as a TA for CISW 300 and CISW 400 (Web Development and Client-Side Programming). Assisted with lectures, created instructional materials, supported course planning, and currently I am helping develop a new course on Python for cybersecurity with Professor Wendell Fishman.",
+    technologies: ["Python", "Web Scripting", "JavaScript", "HTML/CSS"],
     features: [
-      "Assisted college-level CS courses",
+      "Assisted college level CS courses",
       "Developed educational materials",
       "Supported curriculum development",
       "Mentored enrolled students"
@@ -188,35 +192,36 @@ export const ProjectDetail = () => {
   "fbla": {
     title: "FBLA Co-President",
     description: "Leadership & Organization",
-    imgUrl: projImg3,
+    imgUrl: projImg16,
     detailedDescription:
-      "Led Mira Loma’s largest student organization with over 110 members. Organized competitions, fundraisers, and initiatives to establish FBLA as a credited course for the first time in over a decade.",
-    technologies: ["Leadership", "Organization", "Public Speaking"],
+      "Led Mira Loma’s largest student organization with over 110 members. Organized competitions, fundraisers, and initiatives to establish FBLA as a credited course for the first time in over a decade. Placed top 3 several times in Introduction to Information Technology at regional and state levels. Placed top 5 in Digital Video Production at the state level twice. Fun fact: This club flyer was what helped us win the elections to become presidents!",
+    technologies: ["Leadership", "Basic Python", "Information Technology", "Public Speaking"],
     features: [
       "Managed 110+ members",
       "Organized regional and state competitions",
       "Raised over $1,500 in funds",
-      "Institutional program development"
+      "2x National Qualifier in computer science events"
     ],
-    duration: "2024–2025",
+    duration: "2022 - Present",
     role: "Co-President"
   },
 
   "chess": {
     title: "USCF Competitive Chess",
     description: "Competitive Strategy & Analysis",
-    imgUrl: projImg1,
+    imgUrl: projImg17,
     detailedDescription:
-      "Competed in USCF-rated tournaments across California, earning over $1,500 in winnings and achieving a peak rating of 1747. Emphasized preparation, probabilistic reasoning, and post-game analysis.",
+      "I’ve been playing chess since I was seven years old. I took a long break from it for a while, but ended up picking it back up during my freshman year, and honestly, it stuck harder than ever. Chess is something I genuinely love. It’s shaped how I think, how I approach problems, and how I deal with pressure. I’ve competed in USCF-rated tournaments across California, earned over $2000 in winnings, and reached a peak rating of 1747, but what keeps me coming back is the process: preparing lines, reviewing games, spotting patterns, and getting better one mistake at a time. Whether it’s a serious tournament game or a random match with friends, I’m always down to play. If you like chess, feel free to add me or challenge me anytime.",
     technologies: ["Strategic Thinking", "Game Theory", "Analysis"],
     features: [
-      "State-ranked competitor",
-      "Tournament prize earnings",
-      "Extensive preparation and review",
-      "High-level competitive play"
+      "2nd Place out of 90 competitors at the 2025 Berkeley Golden State Open",
+      "2nd Place out of 44 competitors at the 2024 Central California Open",
+      
     ],
-    duration: "2019–Present",
-    role: "Competitive Player"
+    duration: "My whole life :)",
+    role: "Competitive Player",
+    chessComLink: "https://www.chess.com/member/cryingwolf2009",
+    uscfLink: "https://ratings.uschess.org/player/15871783"
   }
 };
 
@@ -305,9 +310,10 @@ export const ProjectDetail = () => {
 
         <Row className="mt-4">
   <Col>
+
     {project.githubLink && (
-      <Button 
-        variant="outline-light" 
+      <Button
+        variant="outline-light"
         href={project.githubLink}
         target="_blank"
         rel="noopener noreferrer"
@@ -316,10 +322,10 @@ export const ProjectDetail = () => {
         View on GitHub
       </Button>
     )}
-    
+
     {project.youtubeLink && (
-      <Button 
-        variant="outline-light" 
+      <Button
+        variant="outline-light"
         href={project.youtubeLink}
         target="_blank"
         rel="noopener noreferrer"
@@ -328,10 +334,10 @@ export const ProjectDetail = () => {
         Watch Video
       </Button>
     )}
-    
+
     {project.competitionLink && (
-      <Button 
-        variant="outline-light" 
+      <Button
+        variant="outline-light"
         href={project.competitionLink}
         target="_blank"
         rel="noopener noreferrer"
@@ -340,10 +346,10 @@ export const ProjectDetail = () => {
         View Competition
       </Button>
     )}
-    
+
     {project.liveLink && (
-      <Button 
-        variant="primary" 
+      <Button
+        variant="primary"
         href={project.liveLink}
         target="_blank"
         rel="noopener noreferrer"
@@ -352,20 +358,46 @@ export const ProjectDetail = () => {
         View Live Demo
       </Button>
     )}
-    
+
     {project.paperLink && (
-      <Button 
-        variant="outline-light" 
+      <Button
+        variant="outline-light"
         href={project.paperLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="mb-3"
+        className="me-3 mb-3"
       >
         Read More
       </Button>
     )}
+
+    {project.chessComLink && (
+      <Button
+        variant="outline-light"
+        href={project.chessComLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="me-3 mb-3"
+      >
+        View Chess.com Profile
+      </Button>
+    )}
+
+    {project.uscfLink && (
+      <Button
+        variant="outline-light"
+        href={project.uscfLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mb-3"
+      >
+        View USCF Profile
+      </Button>
+    )}
+
   </Col>
 </Row>
+
       </Container>
     </section>
   );

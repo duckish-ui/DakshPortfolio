@@ -14,6 +14,10 @@ import projImg11 from "../assets/img/assip1.png";
 import projImg12 from "../assets/img/Polyphy1.png";
 import projImg13 from "../assets/img/Polyphy2.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg14 from "../assets/img/ta1.png";
+import projImg15 from "../assets/img/fbla1.png";
+import projImg16 from "../assets/img/fbla2.png";
+import projImg17 from "../assets/img/chess1.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -73,19 +77,19 @@ export const Projects = () => {
       id: "ta-crc",
       title: "Teaching Assistant",
       description: "College CS Instruction",
-      imgUrl: projImg2,
+      imgUrl: projImg14,
     },
     {
       id: "fbla",
       title: "FBLA Co-President",
       description: "Leadership & Organization",
-      imgUrl: projImg3,
+      imgUrl: projImg15,
     },
     {
       id: "chess",
       title: "USCF Competitive Chess",
       description: "State-Ranked Tournament Player",
-      imgUrl: projImg1,
+      imgUrl: projImg17,
     },
   ];
 
@@ -178,7 +182,7 @@ export const Projects = () => {
             </Col>
           </Row>
         </Container>
-        <img className="background-image-right" src={colorSharp2} alt="background"></img>
+        
       </section>
     </>
   )

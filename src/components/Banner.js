@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/chess.png";
+import headerImg from "../assets/img/tesla.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Machine Learning Researcher", "Database Designer" ];
+  const toRotate = [ "Web Developer", "ML/AI Researcher", "Analytical" ];
   const period = 2000;
 
   useEffect(() => {
@@ -57,7 +57,11 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hello! I'm Daksh, `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Machine Learning Researcher", "Database Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I am a senior in the IB Diploma Programme, entering college in Fall 2026. I am interested in computer science, particularly in building thoughtful, people-centered technology and learning how complex systems work at scale. I enjoy challenging myself academically while staying grounded in balance and curiosity.</p>
+                  <p>I’m a senior in the IB Diploma Program and I’ll be heading to college in Fall
+  2026. I’m drawn to computer science because I like building things that people
+  actually use and understanding how big systems work behind the scenes. I enjoy
+  pushing myself in school, but I also try to stay curious, balanced, and open to
+  learning wherever it shows up. To the right is a picture of me and my family at the Tesla Production Factory in Fremont, CA. I am the person on the <b>far right</b> if you couldn't tell :)</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
