@@ -17,6 +17,8 @@ import projImg14 from "../assets/img/ta1.png";
 import projImg15 from "../assets/img/fbla1.png";
 import projImg16 from "../assets/img/fbla2.png";
 import projImg17 from "../assets/img/chess1.png";
+import projImg18 from "../assets/img/cong1.png";
+import projImg19 from "../assets/img/Mathnasium1.png";
 export const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -222,8 +224,62 @@ export const ProjectDetail = () => {
     role: "Competitive Player",
     chessComLink: "https://www.chess.com/member/cryingwolf2009",
     uscfLink: "https://ratings.uschess.org/player/15871783"
-  }
+  },
+
+  "cac-ambassador": {
+  title: "Congressional App Challenge Ambassador",
+  description: "Community Outreach & App Development Mentorship",
+  imgUrl: projImg18,
+  detailedDescription:
+    "Served as a Congressional App Challenge Ambassador after previously winning the challenge, supporting students interested in app development through mentorship, technical guidance, and community outreach. Hosted and led Zoom workshops covering pipelines, frontend development, and other strategies, helping participants translate ideas into functional applications. Acted as a bridge between first-time developers and the broader CAC ecosystem.",
+  technologies: ["App Development", "JavaScript", "Mentorship", "Public Speaking"],
+  features: [
+    "Hosted  5 virtual workshops",
+    "30+ participants",
+    "Promoted accessible pathways into computer science"
+  ],
+  duration: "August 2025 - November 2025",
+  role: "Ambassador"
+},
+
+"mathnasium": {
+  title: "Mathnasium Instructor",
+  description: "Mathematics Instruction & Academic Support",
+  imgUrl: projImg19,
+  detailedDescription:
+    "Tutored students from Algebra through Calculus using the Mathnasium Method. I assisted with personalized lesson plans, guided problem-solving, and tracked progress. Helped 15 students improve grades by ~22% on average while building teaching, communication, and mentoring skills. Used the money to fund college applications. ",
+  technologies: ["Applied Mathematics", "Problem Solving", "Instruction"],
+  features: [
+    "Trigonometry",
+    "Pre-Calculus",
+    "AP Calculus AB",
+    "AP Calculus BC",
+    "Emphasis on conceptual understanding over memorization",
+  
+  ],
+  duration: "October 2024 - July 2025",
+  role: "Instructor/Tutor"
+},
+
+"gym-training": {
+  title: "Strength & Conditioning Training",
+  description: "Personal Discipline & Physical Development",
+  imgUrl: projImg2,
+  detailedDescription:
+    "Committed to long-term strength and conditioning training as a structured personal discipline. Followed progressive training programs focused on consistency, recovery, and measurable improvement. This practice reinforced habits of goal-setting, resilience, and self-regulation, shaping how I manage pressure, maintain balance, and sustain performance across academic and technical commitments.",
+  technologies: ["Fitness Programming", "Self-Discipline", "Performance Tracking"],
+  features: [
+    "Consistent long-term training regimen",
+    "Goal-oriented performance tracking",
+    "Emphasis on discipline, recovery, and balance",
+    "Transferable habits supporting academic endurance"
+  ],
+  duration: "Ongoing",
+  role: "Inadependent Trainee"
+}
+
 };
+
 
 
   const project = allProjects[id];

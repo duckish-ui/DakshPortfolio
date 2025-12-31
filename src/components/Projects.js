@@ -18,6 +18,8 @@ import projImg14 from "../assets/img/ta1.png";
 import projImg15 from "../assets/img/fbla1.png";
 import projImg16 from "../assets/img/fbla2.png";
 import projImg17 from "../assets/img/chess1.png";
+import projImg18 from "../assets/img/cong1.png";
+import projImg19 from "../assets/img/Mathnasium1.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -91,6 +93,24 @@ export const Projects = () => {
       description: "State-Ranked Tournament Player",
       imgUrl: projImg17,
     },
+    {
+  id: "cac-ambassador",
+  title: "Congressional App Challenge Ambassador",
+  description: "App Development Mentorship",
+  imgUrl: projImg18,
+},
+{
+  id: "mathnasium",
+  title: "Mathnasium Instructor",
+  description: "Mathematics Tutoring",
+  imgUrl: projImg19,
+},
+{
+  id: "gym-training",
+  title: "Strength & Conditioning",
+  description: "Personal Discipline & Training",
+  imgUrl: projImg2,
+},
   ];
 
   return (
