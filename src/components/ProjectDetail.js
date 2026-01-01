@@ -19,6 +19,7 @@ import projImg16 from "../assets/img/fbla2.png";
 import projImg17 from "../assets/img/chess1.png";
 import projImg18 from "../assets/img/cong1.png";
 import projImg19 from "../assets/img/Mathnasium1.png";
+import projImg20 from "../assets/img/gym`.jpg";
 export const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -263,20 +264,22 @@ export const ProjectDetail = () => {
 
 "gym-training": {
   title: "Strength & Conditioning Training",
-  description: "Personal Discipline & Physical Development",
-  imgUrl: projImg2,
+  description: "Science Based Lifting",
+  imgUrl: projImg20,
   detailedDescription:
-    "Committed to long-term strength and conditioning training as a structured personal discipline. Followed progressive training programs focused on consistency, recovery, and measurable improvement. This practice reinforced habits of goal-setting, resilience, and self-regulation, shaping how I manage pressure, maintain balance, and sustain performance across academic and technical commitments.",
-  technologies: ["Fitness Programming", "Self-Discipline", "Performance Tracking"],
-  features: [
-    "Consistent long-term training regimen",
-    "Goal-oriented performance tracking",
-    "Emphasis on discipline, recovery, and balance",
-    "Transferable habits supporting academic endurance"
+    "I love to go to the gym with a primary focus on hypertrophy and sustainable progress. My current program follows an anterior–posterior split trained at a three-times-per-week frequency. Going to the gym not only helps be build my physique but also teaches my discipline and other lessons that I use outside of the gym, especially in academics.",
+  technologies: [
+    "Hypertrophy Programming",
+    "Progressive Overload",
+    "Recovery Management"
   ],
-  duration: "Ongoing",
-  role: "Inadependent Trainee"
+  features: [
+    "Anterior/posterior split trained at high frequency (3x per week)",
+    "Emphasis on recovery, volume control, and long-term consistency",
+  ],
+  duration: "March 2024 - Present",
 }
+
 
 };
 

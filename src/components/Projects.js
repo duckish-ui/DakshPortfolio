@@ -20,6 +20,7 @@ import projImg16 from "../assets/img/fbla2.png";
 import projImg17 from "../assets/img/chess1.png";
 import projImg18 from "../assets/img/cong1.png";
 import projImg19 from "../assets/img/Mathnasium1.png";
+import projImg20 from "../assets/img/gym`.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -108,8 +109,8 @@ export const Projects = () => {
 {
   id: "gym-training",
   title: "Strength & Conditioning",
-  description: "Personal Discipline & Training",
-  imgUrl: projImg2,
+  description: "Science Based Lifting",
+  imgUrl: projImg20,
 },
   ];
 
