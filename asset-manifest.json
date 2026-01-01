@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DakshPortfolio/static/css/main.a114e6a1.css",
-    "main.js": "/DakshPortfolio/static/js/main.6e27ed40.js",
+    "main.js": "/DakshPortfolio/static/js/main.4985d384.js",
     "static/js/453.71adf86d.chunk.js": "/DakshPortfolio/static/js/453.71adf86d.chunk.js",
     "static/media/pillimg2.jpg": "/DakshPortfolio/static/media/pillimg2.26c474945883fdc26e8a.jpg",
     "static/media/car1.jpg": "/DakshPortfolio/static/media/car1.aa99888275ddbbc4c964.jpg",
@@ -18,6 +18,7 @@
     "static/media/Polyphy2.png": "/DakshPortfolio/static/media/Polyphy2.9340b8381b5517233149.png",
     "static/media/fbla1.png": "/DakshPortfolio/static/media/fbla1.b20626df23d86dca7ca6.png",
     "static/media/sees2.png": "/DakshPortfolio/static/media/sees2.59498f8b4146eb361ec0.png",
+    "static/media/gym`.jpg": "/DakshPortfolio/static/media/gym`.7a7fbbe4f3d473a42887.jpg",
     "static/media/chess1.png": "/DakshPortfolio/static/media/chess1.8dfa25be68170a35b9a3.png",
     "static/media/CentraNo2-Bold.ttf": "/DakshPortfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/DakshPortfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
@@ -37,11 +38,11 @@
     "index.html": "/DakshPortfolio/index.html",
     "static/media/nav-icon1.svg": "/DakshPortfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "main.a114e6a1.css.map": "/DakshPortfolio/static/css/main.a114e6a1.css.map",
-    "main.6e27ed40.js.map": "/DakshPortfolio/static/js/main.6e27ed40.js.map",
+    "main.4985d384.js.map": "/DakshPortfolio/static/js/main.4985d384.js.map",
     "453.71adf86d.chunk.js.map": "/DakshPortfolio/static/js/453.71adf86d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a114e6a1.css",
-    "static/js/main.6e27ed40.js"
+    "static/js/main.4985d384.js"
   ]
 }
