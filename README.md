@@ -14,7 +14,7 @@ The project retains HashRouter for GitHub Pages compatibility. Relative asset UR
 ## Edit content
 
 - `src/App.js`: biography, social links, homepage phrases, and project categories.
-- `src/data/projects.js`: all 14 project, experience, research, and activity entries, including images and links.
+- `src/data/projects.js`: all 13 project, experience, research, and activity entries, including images and links.
 - `src/App.css`: theme, layout, responsive styles.
 - `src/components/Sculpture.js`: locally rendered 3D animation. Honors reduced motion and disposes GPU resources on navigation.
 

@@ -33,7 +33,7 @@ const categories = {
     "hydrogen-car",
   ],
   Experience: ["smud", "noteagent"],
-  Research: ["nasa-sees", "assip-ml", "ucsc-cosmic-web"],
+  Research: ["nasa-sees", "assip-ml"],
   "Beyond the code": ["chess", "cac-ambassador", "mathnasium", "gym-training"],
 };
 function Socials() {

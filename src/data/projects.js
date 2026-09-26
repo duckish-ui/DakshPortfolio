@@ -4,7 +4,6 @@ import projImg5 from "../assets/img/car2.jpg";
 import projImg7 from "../assets/img/noteagent2.png";
 import projImg9 from "../assets/img/sees2.png";
 import projImg11 from "../assets/img/assip1.png";
-import projImg13 from "../assets/img/Polyphy2.png";
 import projImg17 from "../assets/img/chess1.png";
 import projImg18 from "../assets/img/cong1.png";
 import projImg19 from "../assets/img/Mathnasium1.png";
@@ -116,24 +115,6 @@ export const allProjects = {
     githubLink: "https://github.com/duckish-ui/Machine-Learning-ASSIP",
     why: "Rain is familiar; predicting what it will do next is not. I wanted to see whether two models that make different kinds of mistakes could work better together, especially on a problem with consequences beyond a benchmark.",
   },
-  "ucsc-cosmic-web": {
-    title: "Cosmic Web Visualization",
-    description: "Computational Astrophysics & Scientific Visualization",
-    imgUrl: projImg13,
-    detailedDescription:
-      "Contributed to the Rhizome Cosmology project under Dr. Elek, using PolyPhy and the Monte Carlo Physarum Machine to reconstruct cosmic web density fields from sparse galaxy and dark matter halo catalogs. Refined Taichi-based, GPU-accelerated visualization pipelines to improve volumetric rendering, filament contrast, and parameter sensitivity analysis.",
-    technologies: [
-      "Python",
-      "Taichi",
-      "PolyPhy",
-      "GPU Computing",
-      "Agent-Based Modeling",
-      "Data Visualization",
-    ],
-    role: "Student Research Intern - UC Santa Cruz",
-    githubLink: "https://github.com/PolyPhyHub",
-    why: "A list of galaxy coordinates does not immediately look like a connected universe. I was drawn to making that hidden structure visible, especially through a model inspired by the way slime molds build networks.",
-  },
   chess: {
     title: "USCF Competitive Chess",
     description: "Competitive Strategy & Analysis",
@@ -214,6 +195,7 @@ export const allProjects = {
   mathlink: {
     title: "MathLink",
     imgUrl: mathlinkImage,
+    githubLink: "https://github.com/duckish-ui/WebsiteDesign2026",
     description: "Collaborative math learning with AI assistance",
     detailedDescription:
       "Built a peer-to-peer math platform in React and TypeScript with Cloud Firestore for real-time document synchronization and Firebase Auth for authenticated study sessions. Integrated Gemini API workflows to generate problem explanations and personalized learning assistance from user inputs.",
