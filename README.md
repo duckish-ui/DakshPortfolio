@@ -14,8 +14,10 @@ The project retains HashRouter for GitHub Pages compatibility. Relative asset UR
 ## Edit content
 
 - `src/App.js`: biography, social links, homepage phrases, and project categories.
-- `src/data/projects.js`: all 13 project, research, and activity entries, including images and links.
+- `src/data/projects.js`: all 14 project, experience, research, and activity entries, including images and links.
 - `src/App.css`: theme, layout, responsive styles.
 - `src/components/Sculpture.js`: locally rendered 3D animation. Honors reduced motion and disposes GPU resources on navigation.
 
 Original assets and legacy components remain available, but the application uses the new pages in App.js. No external API keys or backend services are required.
+
+Entries without an `imgUrl` use a text-only layout. To add the GutHealth screenshot later, import its image in `src/data/projects.js` and set `guthealth.imgUrl`.

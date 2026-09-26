@@ -25,16 +25,53 @@ test("research filtering links to preserved details and source", () => {
   open("/projects");
   fireEvent.click(screen.getByRole("button", { name: "Research" }));
   fireEvent.click(screen.getByRole("heading", { name: /NASA SEES/ }));
-  expect(screen.getByText(/Selected for NASA/)).toBeInTheDocument();
+  expect(screen.getByText(/YData Profiling to clean/)).toBeInTheDocument();
   expect(screen.getByRole("link", { name: /Source code/ })).toHaveAttribute(
     "href",
     "https://github.com/duckish-ui/SEES-Dimensionality-Reduction-for-GLOBE-Dataset",
   );
 });
-test("all six activities remain discoverable", () => {
+test("beyond the code includes four activities without FBLA or teaching assistant", () => {
   open("/projects");
   fireEvent.click(screen.getByRole("button", { name: "Beyond the code" }));
-  expect(screen.getAllByRole("article")).toHaveLength(6);
+  expect(screen.getAllByRole("article")).toHaveLength(4);
+  expect(screen.queryByText(/FBLA|Teaching Assistant/)).not.toBeInTheDocument();
+});
+test("GutHealth opens without an image and retains technology and repository details", () => {
+  open("/projects");
+  fireEvent.click(screen.getByRole("heading", { name: "GutHealth" }));
+  expect(screen.getByRole("heading", { name: "Why" })).toBeInTheDocument();
+  expect(
+    screen.getByRole("heading", { name: "Tools & technologies" }),
+  ).toBeInTheDocument();
+  expect(screen.getByText("FastAPI")).toBeInTheDocument();
+  expect(screen.getByRole("link", { name: /Source code/ })).toHaveAttribute(
+    "href",
+    "https://github.com/duckish-ui/GutHealth",
+  );
+  expect(screen.queryByRole("img")).not.toBeInTheDocument();
+  expect(screen.queryByText(/Highlights|Timeline/)).not.toBeInTheDocument();
+});
+test("experience links to the updated frontend internship role", () => {
+  open("/projects");
+  fireEvent.click(screen.getByRole("button", { name: "Experience" }));
+  expect(
+    screen.getByRole("heading", { name: "SMUD / SETA" }),
+  ).toBeInTheDocument();
+  fireEvent.click(screen.getByRole("heading", { name: "NoteAgent" }));
+  expect(
+    screen.getByText(/Software Engineer Intern \(Frontend\)/),
+  ).toBeInTheDocument();
+  expect(screen.queryByText(/Highlights|Timeline/)).not.toBeInTheDocument();
+});
+test("About introduces Berkeley without graduation dates or the old research summary", () => {
+  open("/about");
+  expect(
+    screen.getByText(/I study Applied Mathematics at UC Berkeley/),
+  ).toBeInTheDocument();
+  expect(
+    screen.queryByText(/NASA|Santa Cruz|graduat|2028|FBLA|Teaching Assistant/i),
+  ).not.toBeInTheDocument();
 });
 test("unknown projects offer a recovery link", () => {
   open("/project/missing");

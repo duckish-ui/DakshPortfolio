@@ -25,16 +25,16 @@ const phrases = [
   "Always Building",
 ];
 const categories = {
-  Projects: ["pill-dispenser", "quittogether", "hydrogen-car", "noteagent"],
-  Research: ["nasa-sees", "assip-ml", "ucsc-cosmic-web"],
-  "Beyond the code": [
-    "ta-crc",
-    "fbla",
-    "chess",
-    "cac-ambassador",
-    "mathnasium",
-    "gym-training",
+  Projects: [
+    "guthealth",
+    "mathlink",
+    "pill-dispenser",
+    "quittogether",
+    "hydrogen-car",
   ],
+  Experience: ["smud", "noteagent"],
+  Research: ["nasa-sees", "assip-ml", "ucsc-cosmic-web"],
+  "Beyond the code": ["chess", "cac-ambassador", "mathnasium", "gym-training"],
 };
 function Socials() {
   return (
@@ -137,15 +137,17 @@ function About() {
         </figure>
         <div className="about-copy">
           <p>
-            Hi! I'm Daksh. I'm a developer and researcher from Folsom,
-            California. I like building things people actually use, and
-            understanding how big systems work behind the scenes.
+            Hi! I'm Daksh. I study Applied Mathematics at UC Berkeley with a
+            minor in Computer Science. I build full-stack applications and data
+            systems, with a focus on backend architecture, asynchronous
+            processing, and AI-powered workflows.
           </p>
           <p>
-            My work spans full-stack development, machine learning, and a little
-            hardware. I've built an app to help students quit vaping, worked on
-            climate data with NASA SEES, and explored the cosmic web with UC
-            Santa Cruz.
+            I like working across the stack: designing a database, building an
+            API, and making the interface feel straightforward. At SMUD, I
+            worked on production data pipelines and operational analytics. In my
+            own projects, I'm exploring how background jobs and LLM
+            orchestration can turn raw data into useful tools.
           </p>
           <p>
             Away from a screen, you'll find me at the gym, playing competitive
@@ -164,12 +166,16 @@ function About() {
         <div className="tags">
           {[
             "React",
+            "TypeScript",
             "JavaScript",
             "Python",
-            "Machine Learning",
-            "Django",
+            "SQL",
+            "PostgreSQL",
+            "Redis",
+            "Docker",
+            "LangGraph",
             "Firebase",
-            "Arduino",
+            "Node.js",
             "C++",
           ].map((tag) => (
             <span key={tag}>{tag}</span>
@@ -193,12 +199,19 @@ function About() {
 function ProjectCard({ id }) {
   const project = allProjects[id];
   return (
-    <article className="project-card">
+    <article
+      className={`project-card${project.imgUrl ? "" : " project-card-text"}`}
+    >
       <Link to={"/project/" + id} className="card-main">
-        <img loading="lazy" src={project.imgUrl} alt="" />
+        {project.imgUrl && <img loading="lazy" src={project.imgUrl} alt="" />}
         <div className="card-copy">
           <h2>{project.title}</h2>
           <p>{project.description}</p>
+          {!project.imgUrl && (
+            <div className="card-technologies">
+              {project.technologies.slice(0, 4).join(" / ")}
+            </div>
+          )}
         </div>
       </Link>
       <div className="card-footer">
@@ -265,16 +278,20 @@ function Detail() {
         <p>{project.description}</p>
         <h1>{project.title}</h1>
       </header>
-      <div className="detail-grid">
-        <div className="detail-image">
-          {(project.images || [project.imgUrl]).map((img, i) => (
-            <img
-              key={img}
-              src={img}
-              alt={project.title + " — image " + (i + 1)}
-            />
-          ))}
-        </div>
+      <div
+        className={`detail-grid${project.imgUrl ? "" : " detail-grid-text"}`}
+      >
+        {project.imgUrl && (
+          <div className="detail-image">
+            {(project.images || [project.imgUrl]).map((img, i) => (
+              <img
+                key={img}
+                src={img}
+                alt={project.title + " — image " + (i + 1)}
+              />
+            ))}
+          </div>
+        )}
         <div className="detail-summary">
           <p>{project.detailedDescription}</p>
           <dl>
@@ -282,12 +299,6 @@ function Detail() {
               <>
                 <dt>Role</dt>
                 <dd>{project.role}</dd>
-              </>
-            )}
-            {project.duration && (
-              <>
-                <dt>Timeline</dt>
-                <dd>{project.duration}</dd>
               </>
             )}
           </dl>
@@ -307,7 +318,19 @@ function Detail() {
               ))}
           </div>
         </div>
+        {!project.imgUrl && (
+          <section className="project-why">
+            <h2>Why</h2>
+            <p>{project.why}</p>
+          </section>
+        )}
       </div>
+      {project.imgUrl && (
+        <section className="project-why">
+          <h2>Why</h2>
+          <p>{project.why}</p>
+        </section>
+      )}
       <div className="detail-bottom">
         <section>
           <h2>Tools & technologies</h2>
@@ -316,14 +339,6 @@ function Detail() {
               <span key={item}>{item}</span>
             ))}
           </div>
-        </section>
-        <section>
-          <h2>Highlights</h2>
-          <ul>
-            {project.features.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
         </section>
       </div>
     </main>
