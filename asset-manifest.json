@@ -1,13 +1,11 @@
 {
   "files": {
-    "main.css": "./static/css/main.6b1d1c89.css",
-    "main.js": "./static/js/main.e248ef21.js",
+    "main.css": "./static/css/main.7ca31ae4.css",
+    "main.js": "./static/js/main.173b0c15.js",
     "static/js/726.955eb107.chunk.js": "./static/js/726.955eb107.chunk.js",
     "static/js/453.676b9ed8.chunk.js": "./static/js/453.676b9ed8.chunk.js",
     "static/js/902.67349353.chunk.js": "./static/js/902.67349353.chunk.js",
     "static/media/pillimg2.jpg": "./static/media/pillimg2.26c474945883fdc26e8a.jpg",
-    "static/media/fbla2.png": "./static/media/fbla2.7e64b77ae41c86790255.png",
-    "static/media/ta1.png": "./static/media/ta1.76fec6f3dc35a6deb9bd.png",
     "static/media/tesla.png": "./static/media/tesla.52c7e2d6f43a39b9f732.png",
     "static/media/car2.jpg": "./static/media/car2.8140dc6b669317b4b2ab.jpg",
     "static/media/cong1.png": "./static/media/cong1.799537a6db14caafd4d2.png",
@@ -23,14 +21,14 @@
     "static/media/Mathnasium1.png": "./static/media/Mathnasium1.e8353a32291a8e06b655.png",
     "static/media/Geist.woff2": "./static/media/Geist.6cfb0fa3e680f33123da.woff2",
     "index.html": "./index.html",
-    "main.6b1d1c89.css.map": "./static/css/main.6b1d1c89.css.map",
-    "main.e248ef21.js.map": "./static/js/main.e248ef21.js.map",
+    "main.7ca31ae4.css.map": "./static/css/main.7ca31ae4.css.map",
+    "main.173b0c15.js.map": "./static/js/main.173b0c15.js.map",
     "726.955eb107.chunk.js.map": "./static/js/726.955eb107.chunk.js.map",
     "453.676b9ed8.chunk.js.map": "./static/js/453.676b9ed8.chunk.js.map",
     "902.67349353.chunk.js.map": "./static/js/902.67349353.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b1d1c89.css",
-    "static/js/main.e248ef21.js"
+    "static/css/main.7ca31ae4.css",
+    "static/js/main.173b0c15.js"
   ]
 }
