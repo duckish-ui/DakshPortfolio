@@ -20,4 +20,4 @@ The project retains HashRouter for GitHub Pages compatibility. Relative asset UR
 
 Original assets and legacy components remain available, but the application uses the new pages in App.js. No external API keys or backend services are required.
 
-Entries without an `imgUrl` use a text-only layout. To add the GutHealth screenshot later, import its image in `src/data/projects.js` and set `guthealth.imgUrl`.
+Cards show the title, description, and first four technologies over the project's image. Set `imgUrl` in `src/data/projects.js` to change the image, and optionally set `imagePosition` to adjust its card crop. Detail pages show the full image.

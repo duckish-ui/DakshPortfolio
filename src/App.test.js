@@ -1,4 +1,5 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { fireEvent, render, screen, within } from "@testing-library/react";
+import { allProjects } from "./data/projects";
 import { MemoryRouter } from "react-router-dom";
 import App from "./App";
 jest.mock("./components/Sculpture", () => () => null);
@@ -24,7 +25,8 @@ test("home exposes identity and navigates to projects", () => {
 test("research filtering links to preserved details and source", () => {
   open("/projects");
   fireEvent.click(screen.getByRole("button", { name: "Research" }));
-  fireEvent.click(screen.getByRole("heading", { name: /NASA SEES/ }));
+  expect(screen.getByRole("heading", { name: "GMU" })).toBeInTheDocument();
+  fireEvent.click(screen.getByRole("heading", { name: "NASA" }));
   expect(screen.getByText(/YData Profiling to clean/)).toBeInTheDocument();
   expect(screen.getByRole("link", { name: /Source code/ })).toHaveAttribute(
     "href",
@@ -37,7 +39,7 @@ test("beyond the code includes four activities without FBLA or teaching assistan
   expect(screen.getAllByRole("article")).toHaveLength(4);
   expect(screen.queryByText(/FBLA|Teaching Assistant/)).not.toBeInTheDocument();
 });
-test("GutHealth opens without an image and retains technology and repository details", () => {
+test("GutHealth opens with its screenshot and retains technology and repository details", () => {
   open("/projects");
   fireEvent.click(screen.getByRole("heading", { name: "GutHealth" }));
   expect(screen.getByRole("heading", { name: "Why" })).toBeInTheDocument();
@@ -49,9 +51,32 @@ test("GutHealth opens without an image and retains technology and repository det
     "href",
     "https://github.com/duckish-ui/GutHealth",
   );
-  expect(screen.queryByRole("img")).not.toBeInTheDocument();
+  expect(screen.getByRole("img", { name: /GutHealth/ })).toHaveAttribute(
+    "src",
+    allProjects.guthealth.imgUrl,
+  );
   expect(screen.queryByText(/Highlights|Timeline/)).not.toBeInTheDocument();
 });
+test.each(["Projects", "Experience", "Research", "Beyond the code"])(
+  "%s cards show technology previews and image backgrounds",
+  (category) => {
+    open("/projects");
+    fireEvent.click(screen.getByRole("button", { name: category }));
+    for (const card of screen.getAllByRole("article")) {
+      const title = within(card).getByRole("heading").textContent;
+      const project = Object.values(allProjects).find(
+        (item) => item.title === title,
+      );
+      expect(
+        within(card).getByText(project.technologies.slice(0, 4).join(" / ")),
+      ).toBeInTheDocument();
+      expect(card.querySelector(".card-background")).toHaveAttribute(
+        "src",
+        project.imgUrl,
+      );
+    }
+  },
+);
 test("experience links to the updated frontend internship role", () => {
   open("/projects");
   fireEvent.click(screen.getByRole("button", { name: "Experience" }));

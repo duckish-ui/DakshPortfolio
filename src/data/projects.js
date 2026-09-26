@@ -9,6 +9,9 @@ import projImg17 from "../assets/img/chess1.png";
 import projImg18 from "../assets/img/cong1.png";
 import projImg19 from "../assets/img/Mathnasium1.png";
 import projImg20 from "../assets/img/gym`.jpg";
+import guthealthImage from "../assets/img/guthealth.png";
+import mathlinkImage from "../assets/img/mathlink.png";
+import smudImage from "../assets/img/smud.jpeg";
 
 export const allProjects = {
   "pill-dispenser": {
@@ -80,7 +83,7 @@ export const allProjects = {
     why: "Notes are easy to collect and surprisingly hard to use again. What interested me was closing that gap: helping someone find the thought they forgot, pick up a conversation, or turn a page of ideas into a next step.",
   },
   "nasa-sees": {
-    title: "NASA SEES - Hack the GLOBE",
+    title: "NASA",
     description: "Data pipelines and environmental anomaly detection",
     imgUrl: projImg9,
     detailedDescription:
@@ -101,7 +104,7 @@ export const allProjects = {
     why: "An unusual reading can be the most interesting part of a dataset, or just a broken sensor. I liked working on that distinction: making messy observations usable without throwing away the signals worth investigating.",
   },
   "assip-ml": {
-    title: "ASSIP - Rainfall Prediction",
+    title: "GMU",
     description: "Time-Series Machine Learning Research",
     imgUrl: projImg11,
     detailedDescription:
@@ -183,6 +186,7 @@ export const allProjects = {
   },
   guthealth: {
     title: "GutHealth",
+    imgUrl: guthealthImage,
     description: "Asynchronous health analytics & AI workflows",
     detailedDescription:
       "Built a full-stack meal and symptom tracker with a React/TypeScript dashboard, FastAPI, and PostgreSQL. Auth0 and JWT-protected APIs isolate each user's records. Redis and Celery run background analysis of delayed ingredient-symptom associations, with permutation tests and false-discovery adjustment. A LangGraph workflow turns aggregate results into structured explanations, with a deterministic fallback when AI is unavailable. Docker Compose and GitHub Actions support repeatable builds and automated backend and frontend tests. The analysis surfaces exploratory patterns, not diagnoses.",
@@ -209,6 +213,7 @@ export const allProjects = {
   },
   mathlink: {
     title: "MathLink",
+    imgUrl: mathlinkImage,
     description: "Collaborative math learning with AI assistance",
     detailedDescription:
       "Built a peer-to-peer math platform in React and TypeScript with Cloud Firestore for real-time document synchronization and Firebase Auth for authenticated study sessions. Integrated Gemini API workflows to generate problem explanations and personalized learning assistance from user inputs.",
@@ -226,6 +231,8 @@ export const allProjects = {
   },
   smud: {
     title: "SMUD / SETA",
+    imgUrl: smudImage,
+    imagePosition: "center 28%",
     description: "Enterprise data engineering & operational analytics",
     detailedDescription:
       "Engineered and optimized more than five production ETL pipelines in Python and SQL to automate ingestion and migration across internal enterprise databases. Built a Power BI analytics dashboard tracking more than 300 AI support tickets, with relational data models and automated refresh jobs to surface operational insights for IT stakeholders.",

@@ -199,19 +199,23 @@ function About() {
 function ProjectCard({ id }) {
   const project = allProjects[id];
   return (
-    <article
-      className={`project-card${project.imgUrl ? "" : " project-card-text"}`}
-    >
+    <article className="project-card">
+      {project.imgUrl && (
+        <img
+          className="card-background"
+          loading="lazy"
+          src={project.imgUrl}
+          alt=""
+          style={{ objectPosition: project.imagePosition || "center" }}
+        />
+      )}
       <Link to={"/project/" + id} className="card-main">
-        {project.imgUrl && <img loading="lazy" src={project.imgUrl} alt="" />}
         <div className="card-copy">
           <h2>{project.title}</h2>
           <p>{project.description}</p>
-          {!project.imgUrl && (
-            <div className="card-technologies">
-              {project.technologies.slice(0, 4).join(" / ")}
-            </div>
-          )}
+          <div className="card-technologies">
+            {project.technologies.slice(0, 4).join(" / ")}
+          </div>
         </div>
       </Link>
       <div className="card-footer">
