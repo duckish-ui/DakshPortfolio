@@ -167,6 +167,7 @@ export const allProjects = {
   },
   guthealth: {
     title: "GutHealth",
+    liveLink: "https://guthealth-3sxx.onrender.com/",
     imgUrl: guthealthImage,
     description: "Asynchronous health analytics & AI workflows",
     detailedDescription:
@@ -194,6 +195,7 @@ export const allProjects = {
   },
   mathlink: {
     title: "MathLink",
+    liveLink: "https://fblawebsitedesign2026-95e2b.web.app/",
     imgUrl: mathlinkImage,
     githubLink: "https://github.com/duckish-ui/WebsiteDesign2026",
     description: "Collaborative math learning with AI assistance",
