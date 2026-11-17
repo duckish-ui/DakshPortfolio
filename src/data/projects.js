@@ -9,7 +9,8 @@ import projImg18 from "../assets/img/cong1.png";
 import projImg19 from "../assets/img/Mathnasium1.png";
 import projImg20 from "../assets/img/gym`.jpg";
 import guthealthImage from "../assets/img/guthealth.png";
-import mathlinkImage from "../assets/img/mathlink.png";
+import mathlinkRoomImage from "../assets/img/mathlink-room.png";
+import mathlinkDashboardImage from "../assets/img/mathlink-dashboard.png";
 import smudImage from "../assets/img/smud.jpeg";
 import liftlogImage from "../assets/img/liftlog.png";
 
@@ -221,23 +222,29 @@ export const allProjects = {
   },
   mathlink: {
     title: "MathLink",
-    liveLink: "https://fblawebsitedesign2026-95e2b.web.app/",
-    imgUrl: mathlinkImage,
-    githubLink: "https://github.com/duckish-ui/WebsiteDesign2026",
-    description: "Collaborative math learning with AI assistance",
+    imgUrl: mathlinkDashboardImage,
+    images: [mathlinkRoomImage, mathlinkDashboardImage],
+    imagePosition: "center top",
+    githubLink: "https://github.com/duckish-ui/mathlink",
+    description: "Real-time collaborative math learning",
     detailedDescription:
-      "Built a peer-to-peer math platform in React and TypeScript with Cloud Firestore for real-time document synchronization and Firebase Auth for authenticated study sessions. Integrated Gemini API workflows to generate problem explanations and personalized learning assistance from user inputs.",
+      "Built a full-stack platform where students learn math together in real time. Live study rooms give every attendee a shared whiteboard, LaTeX chat with typing indicators, presence, and host-posed live problems, all synchronized over Socket.IO. Students can race each other in multiplayer Math Battles, take server-graded quizzes with step-by-step explanations, and ask an AI tutor that is proxied through the backend so the API key stays secret. XP, streaks, topic mastery charts, and a live leaderboard track progress. The React and TypeScript client, Express 5 API, and WebSocket server deploy as a single service backed by PostgreSQL through Prisma, with Zod validation, JWT auth with bcrypt-hashed passwords, Helmet, and rate limiting.",
     role: "Full-Stack Developer",
     technologies: [
       "React",
       "TypeScript",
-      "Firebase Auth",
-      "Cloud Firestore",
-      "NoSQL",
-      "Gemini API",
+      "Node.js",
+      "Express",
+      "Socket.IO",
+      "PostgreSQL",
+      "Prisma",
+      "JWT Auth",
+      "Zod",
+      "Groq LLM API",
       "Tailwind CSS",
+      "KaTeX",
     ],
-    why: "Getting stuck on a math problem is often easier to work through with another person. I wanted to bring that shared study-table experience online, with explanations available when a group needs a nudge rather than a complete change of direction.",
+    why: "Getting stuck on a math problem is often easier to work through with another person. I wanted to bring that shared study-table experience online, so a group can see the same board, try the same problem, and get a nudge when they need one.",
   },
   smud: {
     title: "SMUD / SETA",
