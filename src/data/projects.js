@@ -11,6 +11,7 @@ import projImg20 from "../assets/img/gym`.jpg";
 import guthealthImage from "../assets/img/guthealth.png";
 import mathlinkImage from "../assets/img/mathlink.png";
 import smudImage from "../assets/img/smud.jpeg";
+import liftlogImage from "../assets/img/liftlog.png";
 
 export const allProjects = {
   "pill-dispenser": {
@@ -192,6 +193,31 @@ export const allProjects = {
     ],
     why: "A food diary can tell you what happened without helping you see a pattern. I wanted to connect the entries across days, make the results understandable, and give someone a better starting point for questions instead of another spreadsheet to interpret.",
     githubLink: "https://github.com/duckish-ui/GutHealth",
+  },
+  liftlog: {
+    title: "Liftlog",
+    liveLink: "https://liftlog-mauve.vercel.app",
+    imgUrl: liftlogImage,
+    imagePosition: "center top",
+    description: "Full-stack workout tracking & progress analytics",
+    detailedDescription:
+      "Designed in Figma and built a deployed workout tracker with Next.js 15, React, and TypeScript. Next.js route handlers expose a REST API validated with Zod, backed by PostgreSQL on Neon through Prisma. Authentication uses bcrypt-hashed passwords and JWTs in HTTP-only cookies, with middleware protecting every app page and each API route returning only the signed-in user's data. An in-progress workout lives in a Redux Toolkit store persisted across reloads. The dashboard shows streaks, weekly volume, and personal records, and per-exercise charts track estimated one-rep maxes. About 800 exercises are imported from the open-source wger Workout Manager API.",
+    role: "Full-Stack Developer & Designer",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Redux Toolkit",
+      "REST APIs",
+      "Zod",
+      "JWT Auth",
+      "Tailwind CSS",
+      "Vercel",
+    ],
+    why: "Most workout apps bury the one thing I actually want to know: am I getting stronger? I wanted logging a set to take seconds, and the progress to be obvious the moment I open the app.",
+    githubLink: "https://github.com/duckish-ui/liftlog",
   },
   mathlink: {
     title: "MathLink",

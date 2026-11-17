@@ -27,6 +27,7 @@ const phrases = [
 const categories = {
   Projects: [
     "guthealth",
+    "liftlog",
     "mathlink",
     "pill-dispenser",
     "quittogether",
