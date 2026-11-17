@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.e00cb5d9.css",
-    "main.js": "./static/js/main.f7138cf8.js",
+    "main.js": "./static/js/main.ae3d5c9b.js",
     "static/js/726.955eb107.chunk.js": "./static/js/726.955eb107.chunk.js",
     "static/js/453.676b9ed8.chunk.js": "./static/js/453.676b9ed8.chunk.js",
     "static/js/902.67349353.chunk.js": "./static/js/902.67349353.chunk.js",
@@ -15,8 +15,9 @@
     "static/media/assip1.png": "./static/media/assip1.08ff469b9e530b3cb757.png",
     "static/media/sees2.png": "./static/media/sees2.59498f8b4146eb361ec0.png",
     "static/media/gym`.jpg": "./static/media/gym`.7a7fbbe4f3d473a42887.jpg",
+    "static/media/mathlink-dashboard.png": "./static/media/mathlink-dashboard.38bba1d94e2521f2ffec.png",
+    "static/media/mathlink-room.png": "./static/media/mathlink-room.107a1c6533a3e55b7740.png",
     "static/media/chess1.png": "./static/media/chess1.8dfa25be68170a35b9a3.png",
-    "static/media/mathlink.png": "./static/media/mathlink.7c42fa217c123a3ed96b.png",
     "static/media/CentraNo2-Bold.ttf": "./static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Book.ttf": "./static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/liftlog.png": "./static/media/liftlog.543e221ca18e87cd1c9a.png",
@@ -25,13 +26,13 @@
     "static/media/Geist.woff2": "./static/media/Geist.6cfb0fa3e680f33123da.woff2",
     "index.html": "./index.html",
     "main.e00cb5d9.css.map": "./static/css/main.e00cb5d9.css.map",
-    "main.f7138cf8.js.map": "./static/js/main.f7138cf8.js.map",
+    "main.ae3d5c9b.js.map": "./static/js/main.ae3d5c9b.js.map",
     "726.955eb107.chunk.js.map": "./static/js/726.955eb107.chunk.js.map",
     "453.676b9ed8.chunk.js.map": "./static/js/453.676b9ed8.chunk.js.map",
     "902.67349353.chunk.js.map": "./static/js/902.67349353.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e00cb5d9.css",
-    "static/js/main.f7138cf8.js"
+    "static/js/main.ae3d5c9b.js"
   ]
 }
